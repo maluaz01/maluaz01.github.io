@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/integrador.css">
+    <script type ="text/javaScript" src="./js/index.js"></script>
     <title></title>
   </head>
   <body>
     <header>
       <div class="encabezado">
         <figure id="logo">
-         <img src="img/codoacodo.png" alt="Logo de Codo a Codo">
-        </figure>
-        <h6 id="conferencia">Conf Bs As</h6>
+         <a href="#"><img src="img/codoacodo.png" alt="Logo de Codo a Codo"></a>
+       </figure>
+        <h6 id="conferencia"><a href="#">Conf Bs As</a></h6>
         <nav>
           <h6>
           <ul>
-            <li id="laconf">La conferencia</li>
-            <li>Los oradores</li>
-            <li>El lugar y la fecha</li>
-            <li>Conviértete en orador</li>
-            <li id="verde">Comprar tickets</li>
+          <li id="laconf"><a href="#uno">La conferencia</a></li>
+            <li><a href="#conoca">Los oradores</a></li>
+            <li><a href="#playa">El lugar y la fecha</a></li>
+            <li><a href="#anotate">Conviértete en orador</a></li>
+            <li id="verde"><a href="./html/valor-de-tickets.html">Comprar tickets</a></li>
           </ul>
         </h6>
         </nav>
@@ -35,8 +36,8 @@
 
       <div class="botonesConf">
 
-        <input type="button" name="comprar" id="comprar" value="Comprar tickets">
-        <input type="button" name="orador" id="orador" value="Quiero ser orador">
+        <input type="button" name="comprar" id="comprar" value="Comprar tickets" onclick="comprar()">
+        <input type="button" name="orador" id="orador" value="Quiero ser orador" onclick="orador()">
         <p id="limpiar"></p>
       </div>
       </div>
@@ -92,7 +93,7 @@
         <input type="button" name="conoce" id="conoce"value="Conocé más">
       </section>
     </section>
-    <p id="conviertete">CONVIERTETE EN UN</p>
+    <p id="conviertete" >CONVIERTETE EN UN</p>
     <p id="oradin">ORADOR</p>
     <p id="anotate">Anótate como orador para dar una charla ignite. ¡Cuéntanos de qué quieres hablar!</p>
     <div class="formula">
@@ -101,10 +102,10 @@
     <form class="formu" action="index.html" method="post">
 
     <div class="casillas">
-      <input type="text" name="" class="name1" value="Nombre">
-      <input type="text" name="" class="name2" value="Apellido">
+      <input type="text" name="" class="name1" placeholder="Nombre">
+      <input type="text" name="" class="name2" placeholder="Apellido">
       </div>
-      <textarea name="name" rows="6" id="textar" cols="78">  ¿Sobre qué quieres hablar?</textarea>
+      <textarea name="name" rows="6" id="textar" cols="78" placeholder="  ¿Sobre qué quieres hablar?"></textarea>
       <p id="recuerda">Recuerda incluir un título para tu charla.</p>
       <input type="submit" name="" id="enviar" value="Enviar">
     </form>
@@ -120,7 +121,7 @@
           <div>Privacidad</div>
           <div>Estudiantes</div>
         </div>
-    
+
     </footer>
   </body>
 </html>

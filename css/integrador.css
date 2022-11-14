@@ -20,6 +20,14 @@ header{
             margin: 0 auto;
             wrap:nowrap;
 }
+a:link, a:visited{
+  color:#B4BCBD;
+  text-decoration: none;
+}
+#verde a:link, #verde a:visited{
+  color:#34D243;
+  text-decoration: none;
+}
 figure{
       width: 8vw;
 }

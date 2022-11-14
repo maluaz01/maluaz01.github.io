@@ -1,0 +1,370 @@
+*{
+  font-family:Arial ;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+
+       margin:0;
+       padding-bottom: 1vw;
+       padding-top: 0.5vw;
+       width: 100%;
+}
+.encabezado{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            background-color: #3B4C6C;
+            margin: 0 auto;
+            flex-wrap:wrap;
+}
+figure{
+      width: 8vw;
+}
+img{
+    width: 9vw;
+}
+#conferencia{
+             padding-right: 10vw;
+             width: 10vw;
+}
+
+#logo{
+      padding-left: 3.5vw;
+      padding-right: 0;
+      width:10vw;
+     }
+li{
+   font-size: 1.3vw;
+   color:#B4BCBD;
+   margin:0.7vw;
+   display: inline;
+   flex-wrap: wrap;
+}
+
+#laconf{
+        color:white;
+}
+#verde{
+       color:#34D243;
+}
+.globo-grande{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding:0;
+      margin:0 auto;
+
+
+}
+main{
+     margin:0 auto;
+     width:44.38vw;
+}
+.globo-ticket{
+  width:13.75vw;
+  height: 12.875vw;
+  margin: 1.5vw auto 0;
+  /*
+  margin-right: 0.65vw;
+  margin-left: 0.65vw;
+  */
+}
+.categoria{
+  height: 3.75vw;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.cant-categ{
+  display: flex;
+  flex-direction: row;
+  wrap:nowrap;
+}
+.azul{
+  background-color: #0BC0F5;
+  border-top-left-radius: 0.5vw;
+  border-top-right-radius: 0.5vw;
+  padding:0;
+  margin:0;
+}
+.celeste{
+  background-color: #A1E8FD;
+}
+.naranja{
+  background-color: #F5C40B;
+}
+.presentar, .descuento, .porcentaje{
+  height: 2.7vw;
+  text-align: center;
+}
+.porcentaje{
+  padding:0;
+  font-weight: bold;
+}
+.presentar{
+  padding-bottom: 1vw;
+  color:#878292;
+}
+.estu{
+  border:solid 0.2vw #0BC0F5;
+  border-radius: 0.5vw;
+}
+.trai{
+  border:solid 0.2vw #A1E8FD;
+  border-radius: 0.5vw;
+}
+.jun{
+  border:solid 0.2vw #F5C40B;
+  border-radius: 0.5vw;
+}
+.descuento,.label-cantidad,.label-categoria{
+  font-size: 0.7rem;
+  padding-top: 1vw;
+}
+.presentar{
+  font-size: 0.6rem;
+}
+.venta{
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 1vw;
+}
+.valor-ticket{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.formu{
+  width:44.37vw;
+
+}
+#nombre, #apellido{
+  width: 48.55%;
+  height: 2vw;
+}
+.canti{
+  width: 50%;
+}
+#cantidad, option{
+  width: 97%;
+  font-size: 0.7rem;
+}
+#email, #cantidad, #select-categoria{
+  height: 2vw;
+  margin-top: 1vw;
+}
+.select-categoria{
+  width:100%;
+  padding:-1vw 8vw 1.1vw;
+  }
+  .label-cantidad, .label-categoria{
+  }
+
+.mail{
+  width:99%;
+}
+#email{
+  width:100%;
+  margin-bottom: 1vw;
+}
+.a-pagar{
+  padding:1.5vw 1vw;
+  background-color: #DAF9FE;
+  margin-top: 1.5vw;
+  color:#0BC0F5;
+  font-weight: bold;
+  font-size: 1.5vw;
+  border-radius: 0.5vw;
+}
+.botones{
+  margin-top: 1.5vw;
+
+}
+#borrar, #resumen{
+  background-color: #B6D99A;
+  color:white;
+  font-weight: bold;
+  padding:1.1vw 0;
+  margin-bottom: 1.43vw;
+  width: 49.50%;
+  border-radius: 0.5vw;
+  border-color: #B6D99A;
+}
+footer{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       height: 9vw;
+       background-color: #6478AA;
+       color:white;
+       }
+#listadopie{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: nowrap;
+           justify-content: center;
+           width: 72%;
+
+         }
+
+          #listadopie div{
+           font-size: 1.2vw;
+           color:white;
+           text-align: center;
+           height: 6.7vw;
+           width: 7.6vw;
+           margin:2.4vw;
+           margin-bottom: 0;
+  }
+@media (max-width: 991.98px){
+  .primero{
+    margin:0;
+    box-sizing: border-box;
+  }
+  main{
+     margin:0 auto;
+     width:100vw;
+}
+img{
+    width: 20vw;
+}
+#conferencia{
+             padding-left: 15vw;
+             padding-right: 20vw;
+             width: 35vw;
+}
+   .globo-ticket{
+    width:100vw;
+    height: 23vw;
+    margin-top: 1.5vw;
+    margin-right: 0vw;
+    margin-left: 0vw;
+  }
+  .globo-grande{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding:0;
+        margin:0 auto;
+      }
+  .presentar, .descuento, .porcentaje{
+          height: 7vw;
+          text-align: center;
+        }
+  .encabezado{
+                    display: flex;
+                    flex-direction: row;
+                    color: white;
+
+                    margin: 0 auto;
+                    padding:0;
+                    flex-wrap:nowrap;
+                    width: 100vw;
+                  }
+      li{
+                       align-items: flex-end;
+                       font-size: 0.8rem;
+                       color:#B4BCBD;
+                       margin:0.7vw;
+                       display: inline-block;
+                       flex-wrap: wrap;
+                       width:100%;
+                    }
+                    .botones{
+                      margin-top: 1.5vw;
+                      width:100vw;
+                    }
+                    #borrar, #resumen{
+                      background-color: #B6D99A;
+                      color:white;
+                      font-weight: bold;
+                      padding:1.1vw 0;
+                      margin-bottom: 1.43vw;
+                      width: 100vw;
+                      border-radius: 0.5vw;
+                      border-color: #B6D99A;
+                    }
+                    #nombre, #apellido{
+                      width: 99vw;
+                      height: 4vw;
+                      margin: 1vw 0;
+                      padding:0;
+                    }
+                    .cant-categ{
+                      width: 100vw;
+                      margin:2vw 0;
+                      height: 4vw;
+                    }
+                    .cant-categ{
+                      display: flex;
+                      flex-direction: row;
+                      flex-wrap:wrap;
+                    }
+                    .canti{
+                      height: 5vw;
+                    }
+  .cantidad, .select-categoria{
+                      box-sizing: border-box;
+                      height: 4vw;
+                      font-size: 2rem;
+                      margin-bottom: 1vw;
+                      width: 50%;
+                      padding: 1vw;
+                    }
+                    .mail{
+                      width:99vw;
+                      height: 4vw;
+                    }
+                    #email{
+                      width:98%;
+                      margin-bottom: 2.5vw;
+                      padding:1vw;
+                    }
+
+                    .a-pagar{
+                      padding:1.5vw 0;
+                      background-color: #DAF9FE;
+                      margin-top: 4.5vw;
+                      color:#0BC0F5;
+                      font-weight: bold;
+                      font-size: 1.5rem;
+                      border-radius: 0.5vw;
+                      height: 5vw;
+                      width:100vw;
+                    }
+                    footer{
+                           width: 100vw;
+
+
+
+                           height: 10vw;
+                           background-color: #6478AA;
+                           
+                           }
+
+                    #listadopie{
+
+
+                             }
+
+                              #listadopie div{
+
+                               flex-wrap: wrap;
+                               text-align: center;
+                               height: 6.7vw;
+
+                               margin:2.4vw;
+                               margin-bottom: 0;
+
+                               align-items: flex-end;
+                               font-size: 0.7rem;
+                               color:#B4BCBD;
+                               margin:0.7vw;
+                               display: inline-block;
+                               width:100%;
+                      }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/tickets.css">
+  <script type ="text/javaScript" src="../js/tickets.js"></script>
+  <title>Valor de tickets</title>
+</head>
+<body>
+  <div class="primero">
+  <header>
+    <div class="encabezado">
+
+        <figure id="logo">
+         <img src="../img/codoacodo.png" alt="Logo de Codo a Codo" onclick="inicio()">
+        </figure>
+        <h6 id="conferencia" onclick="conferencia()">Conf Bs As</h6>
+
+        <nav>
+          <h6>
+          <ul>
+            <li id="laconf" onclick="conferencia()">La conferencia</li>
+            <li onclick="oradorTicket()">Los oradores</li>
+            <li onclick="lugar()">El lugar y la fecha</li>
+            <li onclick="conversion()">Conviértete en orador</li>
+            <li id="verde" onclick="pagar()">Comprar tickets</li>
+          </ul>
+        </h6>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+<section class="globo-grande">
+  <article class="globo-ticket estu">
+    <div >
+      <p class="categoria azul">Estudiante</p>
+      <p class="descuento">Tienen un descuento</p>
+      <p class="porcentaje">80%</p>
+      <p class="presentar">* Presentar documentación</p>
+    </div>
+  </article>
+
+  <article class="globo-ticket trai">
+    <div>
+      <p class="categoria celeste">Trainee</p>
+      <p class="descuento">Tienen un descuento</p>
+      <p class="porcentaje">50%</p>
+      <p class="presentar">* Presentar documentación</p>
+    </div>
+  </article>
+
+  <article class="globo-ticket jun">
+    <div>
+      <p class="categoria naranja">Junior</p>
+      <p class="descuento">Tienen un descuento</p>
+      <p class="porcentaje">15%</p>
+      <p class="presentar">* Presentar documentación</p>
+    </div>
+  </article>
+</section>
+
+ <p class="venta" id="venta">VENTA</p>
+ <p class="valor-ticket">VALOR DE TICKET $200</p>
+
+ <form class="formu" action="index.html" method="post">
+   <div class="nom-ap">
+   <input type="text" id="nombre" name="nombre" placeholder="Nombre:">
+   <input type="text" id="apellido" name="apellido" placeholder="Apellido:">
+ </div>
+ <div class="mail">
+   <input type="text" id="email" name="email" value="" placeholder="E-mail:" required>
+ </div>
+   <div class="cant-categ">
+     <div class="canti">
+   <label for="cantidad" class="label-cantidad">Cantidad</label><br>
+   <input type="text" name="cantidad"  class="cantidad" id="cantidad" placeholder="Cantidad" height="2vw" value="">
+ </div>
+ <div class="cate">
+  <label for="select-categoria" class="label-categoria">Categoría</label><br>
+  <select class="select-categoria" id="select-categoria" name="select-categoria">
+  <option value= "0">  --Seleccione--</option>
+  <option value="80">Estudiante</option>
+  <option value="50">Trainee</option>
+  <option value="15">Junior</option>
+  </select>
+</div>
+</div>
+    <p class="a-pagar">Total a pagar: $ <span id="aPagar"></span></p>
+    <div class="botones">
+    <input type="reset" name="borrar" id="borrar" value="Borrar" onclick="borrado()">
+    <input type="button" name="resumen" id="resumen" value="Resumen" onclick="calculo()">
+  </div>
+ </form>
+</main>
+<footer>
+        <div id="listadopie">
+          <div>Preguntas frecuentes</div>
+          <div>Contáctanos</div>
+          <div>Prensa</div>
+          <div>Conferencias</div>
+          <div>Términos y condiciones</div>
+          <div>Privacidad</div>
+          <div>Estudiantes</div>
+        </div>
+    </footer>
+  </div>
+    </body>
+  </html>
